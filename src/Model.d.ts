@@ -41,7 +41,7 @@ type OneFieldSchema = {
     nulls?: boolean,
     required?: boolean,
     transform?: (model: AnyModel, op: string, name: string, value: any) => any,
-    type: OneType,
+    type?: OneType,
     unique?: boolean,
     ulid?: boolean,
     uuid?: boolean,
