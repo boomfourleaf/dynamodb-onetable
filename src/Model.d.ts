@@ -90,7 +90,7 @@ type EntityField<T extends OneTypedField> =
     : T['type'] extends ObjectConstructor ? object
     : T['type'] extends DateConstructor ? Date
     : T['type'] extends ArrayConstructor ? []
-    : never;
+    : any;
 
 /*
     Entities are objects whoes signature is based on the schema model of the same name.
